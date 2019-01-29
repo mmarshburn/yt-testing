@@ -21,6 +21,9 @@ function load() {
       part: 'snippet',
       q:query,
   });
+
+  document.getElementById("#go").on("click", load());
+
   // Send the request to the API server, call the onSearchResponse function when the data is returned
   request.execute(onSearchResponse);
 }
