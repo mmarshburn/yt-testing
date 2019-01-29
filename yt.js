@@ -16,13 +16,11 @@ function onYouTubeApiLoad() {
 function load() {
   var query = document.getElementById('query').value;
   // Use the JavaScript client library to create a search.list() API call.
-  var request = gapi.client.YouTube.search.list
+  var request = gapi.client.youtube.search.list
   ({
       part: 'snippet',
       q:query,
   });
-
-  //document.getElementById("#go").on("click", load());
 
   // Send the request to the API server, call the onSearchResponse function when the data is returned
   request.execute(onSearchResponse);
