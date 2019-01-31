@@ -45,7 +45,7 @@ for (var i=0; i<results.length; i++){
 
   //Video Tag
   var video = $("<video>");
-  video.attr("src", results[i].snippet.medium.url);
+  video.attr("src", results[i].snippet.thumbnails.default.url);
 
   //append to holders
   videoDiv.append(p);
