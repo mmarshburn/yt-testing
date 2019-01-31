@@ -32,7 +32,7 @@ function onSearchResponse(response) {
   console.log(responseString)
 
 
-var results = responseString.items
+var results = responseString.items;
 
 for (var i=0; i<results.length; i++){
 
