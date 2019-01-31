@@ -41,7 +41,8 @@ for (var i=0; i<results.length; i++){
   var videoDiv = $("<div>");
 
   // P tag for title
-  var p = $("<p>").text(results[i].snippet.title);
+  var title = $("<h6>").text(results[i].snippet.title);
+  
 
   //Video Tag
   var iframe = $("<iframe>");
@@ -52,8 +53,8 @@ for (var i=0; i<results.length; i++){
   iframe.css("height", 300);
 
   //append to holders
-  videoDiv.append(p);
   videoDiv.prepend(iframe);
+  videoDiv.append(title);
 
   //prepend the video to put-videos-here
 
