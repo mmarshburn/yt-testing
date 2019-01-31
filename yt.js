@@ -46,7 +46,7 @@ for (var i=0; i<results.length; i++){
   //Video Tag
   var thumbnail = $("<img>");
   thumbnail.attr("src", results[i].snippet.thumbnails.high.url);
-  thumbnail.attr("href", "https://www.youtube.com/watch?v=+" resulsts[i].id.videoId)
+  thumbnail.attr("href", "https://www.youtube.com/watch?v=" + results[i].id.videoId)
 
   //append to holders
   videoDiv.append(p);
