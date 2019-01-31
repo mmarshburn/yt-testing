@@ -45,7 +45,7 @@ for (var i=0; i<results.length; i++){
 
   //Video Tag
   var iframe = $("<iframe>");
-  iframe.attr("src", "https://www.youtube.com/embed/" + resutls[i].id.videoId + "");
+  iframe.attr("src", "https://www.youtube.com/embed/" + response.items.id.videoId + "");
   iframe.attr("frameborder", "0");
   iframe.attr("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
 
