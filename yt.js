@@ -48,6 +48,8 @@ for (var i=0; i<results.length; i++){
   iframe.attr("src", "https://www.youtube.com/embed/" + response.items[i].id.videoId + "");
   iframe.attr("frameborder", "0");
   iframe.attr("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
+  iframe.css("width", 600);
+  iframe.css("height", 300);
 
   //append to holders
   videoDiv.append(p);
