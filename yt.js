@@ -44,13 +44,14 @@ for (var i=0; i<results.length; i++){
   var p = $("<p>").text(results[i].snippet.title);
 
   //Video Tag
-  var thumbnail = $("<img>");
-  thumbnail.attr("src", results[i].snippet.thumbnails.high.url);
-  thumbnail.attr("href", "https://www.youtube.com/watch?v=" + results[i].id.videoId + "")
+  var iframe = $("<iframe>");
+  iframe.attr("src", "https://www.youtube.com/embed/" + resutls[i].id.videoId + "");
+  iframe.attr("frameborder", "0");
+  iframe.attr("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
 
   //append to holders
   videoDiv.append(p);
-  videoDiv.append(thumbnail);
+  videoDiv.prepend(iframe);
 
   //prepend the video to put-videos-here
 
