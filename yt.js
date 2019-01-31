@@ -62,3 +62,10 @@ for (var i=0; i<results.length; i++){
 
 
 }};
+
+$("#query").keyup(function(event){
+  if (event.keyCode === 13){
+    load();
+  }
+
+}
