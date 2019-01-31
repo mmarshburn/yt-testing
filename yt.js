@@ -50,7 +50,7 @@ for (var i=0; i<results.length; i++){
 
   //append to holders
   videoDiv.append(p);
-  videoDiv.append(video);
+  videoDiv.append(thumbnail);
 
   //prepend the video to put-videos-here
 
