@@ -44,8 +44,9 @@ for (var i=0; i<results.length; i++){
   var p = $("<p>").text(results[i].snippet.title);
 
   //Video Tag
-  var video = $("<img>");
-  video.attr("src", results[i].snippet.thumbnails.default.url);
+  var thumbnail = $("<img>");
+  thumbnail.attr("src", results[i].snippet.thumbnails.high.url);
+  thumbnail.attr("href", "https://www.youtube.com/watch?v=+" resulsts[i].id.videoId)
 
   //append to holders
   videoDiv.append(p);
