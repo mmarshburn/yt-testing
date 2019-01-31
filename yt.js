@@ -29,4 +29,5 @@ function load() {
 function onSearchResponse(response) {
   var responseString = JSON.stringify(response, '', 2);
   document.getElementById('response').innerHTML = responseString;
+  console.log(responseString);
 }
