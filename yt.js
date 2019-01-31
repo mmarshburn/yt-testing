@@ -68,4 +68,4 @@ $("#query").keyup(function(event){
     load();
   }
 
-}
+});
