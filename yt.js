@@ -28,5 +28,33 @@ function load() {
 // Triggered by this line: request.execute(onSearchResponse);
 function onSearchResponse(response) {
   var responseString = JSON.stringify(response, '', 2);
-  document.getElementById('response').innerHTML = responseString;
+  // document.getElementById('response').innerHTML = responseString;
+  console.log(responseString)
 }
+
+var results = responseString.items
+
+for (var i=0; i<results.length; i++){
+
+
+  // Div for the Video? 
+  var videoDiv = $("<div>");
+
+  // P tag for title
+  var p = $("<p>").text(results[i].snippet.title);
+
+  //Video Tag
+  var video = $("<video>");
+  video.attr("src", results[i].snippet.medium.url);
+
+  //append to holders
+  videoDiv.append(p);
+  videoDiv.append(video);
+
+  //prepend the video to put-videos-here
+
+  $("#put-videos-here").prepend(videoDiv); 
+
+
+}
+
