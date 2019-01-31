@@ -30,7 +30,7 @@ function onSearchResponse(response) {
   var responseString = JSON.stringify(response, '', 2);
   // document.getElementById('response').innerHTML = responseString;
   console.log(responseString)
-}
+
 
 var results = responseString.items
 
@@ -56,5 +56,4 @@ for (var i=0; i<results.length; i++){
   $("#put-videos-here").prepend(videoDiv); 
 
 
-}
-
+}};
