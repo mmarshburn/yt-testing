@@ -34,7 +34,7 @@ function onSearchResponse(response) {
 
 var results = responseString.items;
 
-for (var i=0; i<results.length; i++){
+for (var i=0; i<5; i++){
 
 
   // Div for the Video? 
